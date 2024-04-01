@@ -6,7 +6,8 @@ public class Item {
     public string Name { get; set; }
     public int Quantity { get; set; }
     public string Category { get; set; }
-    public double Price { get; set; }
-    public double Cost { get; set; }
+    public decimal Price { get; set; }
+    public decimal Cost { get; set; }
+    public decimal Profit { get; set; }
     public string Description { get; set; }
 }

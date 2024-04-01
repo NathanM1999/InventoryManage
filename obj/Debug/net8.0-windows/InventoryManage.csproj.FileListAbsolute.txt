@@ -15,3 +15,4 @@ X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\refint\InventoryManag
 X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\InventoryManage.pdb
 X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\InventoryManage.genruntimeconfig.cache
 X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\ref\InventoryManage.dll
+X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\InventoryManage.sourcelink.json

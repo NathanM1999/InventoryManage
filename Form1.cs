@@ -19,6 +19,7 @@ namespace InventoryManage {
             txtItemCategory.Text = string.Empty;
             txtItemCost.Text = string.Empty;
             txtItemPrice.Text = string.Empty;
+            txtItemProfit.Text = string.Empty;
             txtItemDescription.Text = string.Empty;
         }
 
@@ -28,30 +29,61 @@ namespace InventoryManage {
             return identification.ToString();
         }
 
+        public string calculateProfit() {
+            decimal profit = 0;
+
+            if (txtItemPrice.Text != "" && txtItemCost.Text != "" && numItemQty.Value != 0) {
+                profit = (decimal.Parse(txtItemPrice.Text) - decimal.Parse(txtItemCost.Text))
+                    * numItemQty.Value;
+            }
+
+            return profit.ToString();
+        }
+
         private void btnNew_Click(object sender, EventArgs e) {
             emptyForm();
         }
 
         private void btnSave_Click(object sender, EventArgs e) {
-            Item newItem = new Item {
-                Id = generateID(),
-                Name = txtItemName.Text,
-                Quantity = (int)numItemQty.Value,
-                Category = txtItemCategory.Text,
-                Price = Int32.Parse(txtItemPrice.Text),
-                Cost = Int32.Parse(txtItemCost.Text),
-                Description = txtItemDescription.Text,
-            };
+            decimal itemPrice, itemCost;
 
-            string ItemJSON = JsonSerializer.Serialize(newItem);
+            if (!decimal.TryParse(txtItemPrice.Text, out itemPrice)) MessageBox.Show("Error: Item Price value must be numeric");
+            else if (!decimal.TryParse(txtItemCost.Text, out itemCost)) MessageBox.Show("Error: Item Cost value must be numeric");
 
-            if (!File.Exists(itemJsonPath)) {
-                using (File.Create(itemJsonPath)) { }
+            else {
+                Item newItem = new Item {
+                    Id = generateID(),
+                    Name = txtItemName.Text,
+                    Quantity = (int)numItemQty.Value,
+                    Category = txtItemCategory.Text,
+                    Price = decimal.Parse(txtItemPrice.Text),
+                    Cost = decimal.Parse(txtItemCost.Text),
+                    Profit = decimal.Parse(txtItemProfit.Text),
+                    Description = txtItemDescription.Text,
+                };
+
+                string ItemJSON = JsonSerializer.Serialize(newItem);
+
+                if (!File.Exists(itemJsonPath)) {
+                    using (File.Create(itemJsonPath)) { }
+                }
+
+                File.WriteAllText(itemJsonPath, ItemJSON);
+
+                emptyForm();
             }
+        }
 
-            File.WriteAllText(itemJsonPath, ItemJSON);
+        private void txtItemPrice_TextChanged(object sender, EventArgs e) {
+            txtItemProfit.Text = calculateProfit();
+        }
 
-            emptyForm();
+        private void txtItemCost_TextChanged(object sender, EventArgs e) {
+            txtItemProfit.Text = calculateProfit();
+        }
+
+        private void numItemQty_ValueChanged(object sender, EventArgs e) {
+            txtItemProfit.Text = calculateProfit();
         }
     }
 }

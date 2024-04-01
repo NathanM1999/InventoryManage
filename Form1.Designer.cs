@@ -40,6 +40,8 @@
             txtItemPrice = new TextBox();
             lblItemPrice = new Label();
             dataGridView1 = new DataGridView();
+            txtItemProfit = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)numItemQty).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -58,6 +60,7 @@
             numItemQty.Name = "numItemQty";
             numItemQty.Size = new Size(74, 23);
             numItemQty.TabIndex = 1;
+            numItemQty.ValueChanged += numItemQty_ValueChanged;
             // 
             // lblItemName
             // 
@@ -101,19 +104,20 @@
             // 
             lblItemCost.AutoSize = true;
             lblItemCost.ForeColor = Color.White;
-            lblItemCost.Location = new Point(641, 98);
+            lblItemCost.Location = new Point(555, 98);
             lblItemCost.Name = "lblItemCost";
-            lblItemCost.Size = new Size(58, 15);
+            lblItemCost.Size = new Size(56, 15);
             lblItemCost.TabIndex = 7;
-            lblItemCost.Text = "Item Cost";
+            lblItemCost.Text = "Unit Cost";
             // 
             // txtItemCost
             // 
-            txtItemCost.Location = new Point(641, 116);
+            txtItemCost.Location = new Point(555, 116);
             txtItemCost.Name = "txtItemCost";
             txtItemCost.PlaceholderText = "E.x, 1.25";
-            txtItemCost.Size = new Size(189, 23);
+            txtItemCost.Size = new Size(94, 23);
             txtItemCost.TabIndex = 8;
+            txtItemCost.TextChanged += txtItemCost_TextChanged;
             // 
             // lblTitle
             // 
@@ -186,21 +190,22 @@
             // 
             // txtItemPrice
             // 
-            txtItemPrice.Location = new Point(421, 116);
+            txtItemPrice.Location = new Point(425, 116);
             txtItemPrice.Name = "txtItemPrice";
             txtItemPrice.PlaceholderText = "E.x, 1.50";
-            txtItemPrice.Size = new Size(189, 23);
+            txtItemPrice.Size = new Size(94, 23);
             txtItemPrice.TabIndex = 16;
+            txtItemPrice.TextChanged += txtItemPrice_TextChanged;
             // 
             // lblItemPrice
             // 
             lblItemPrice.AutoSize = true;
             lblItemPrice.ForeColor = Color.White;
-            lblItemPrice.Location = new Point(421, 98);
+            lblItemPrice.Location = new Point(425, 98);
             lblItemPrice.Name = "lblItemPrice";
-            lblItemPrice.Size = new Size(60, 15);
+            lblItemPrice.Size = new Size(58, 15);
             lblItemPrice.TabIndex = 15;
-            lblItemPrice.Text = "Item Price";
+            lblItemPrice.Text = "Unit Price";
             // 
             // dataGridView1
             // 
@@ -210,12 +215,32 @@
             dataGridView1.Size = new Size(873, 266);
             dataGridView1.TabIndex = 17;
             // 
+            // txtItemProfit
+            // 
+            txtItemProfit.Location = new Point(685, 116);
+            txtItemProfit.Name = "txtItemProfit";
+            txtItemProfit.ReadOnly = true;
+            txtItemProfit.Size = new Size(94, 23);
+            txtItemProfit.TabIndex = 19;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(685, 98);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 15);
+            label1.TabIndex = 18;
+            label1.Text = "Total Profit";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
             ClientSize = new Size(924, 720);
+            Controls.Add(txtItemProfit);
+            Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(txtItemPrice);
             Controls.Add(lblItemPrice);
@@ -260,5 +285,7 @@
         private TextBox txtItemPrice;
         private Label lblItemPrice;
         private DataGridView dataGridView1;
+        private TextBox txtItemProfit;
+        private Label label1;
     }
 }
