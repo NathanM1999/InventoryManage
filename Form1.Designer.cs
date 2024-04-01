@@ -187,6 +187,7 @@
             btnDelete.TabIndex = 14;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
             // 
             // txtItemPrice
             // 
@@ -212,7 +213,7 @@
             dgvItemList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvItemList.Location = new Point(35, 399);
             dgvItemList.Name = "dgvItemList";
-            dgvItemList.Size = new Size(873, 266);
+            dgvItemList.Size = new Size(854, 266);
             dgvItemList.TabIndex = 17;
             // 
             // txtItemProfit

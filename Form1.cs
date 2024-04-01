@@ -27,8 +27,7 @@ namespace InventoryManage {
                 string itemJson = File.ReadAllText(itemJsonPath);
 
                 if (itemJson != null) {
-                    var items = itemJson;
-                    dgvItemList.DataSource = items;
+                    dgvItemList.DataSource = JsonConvert.DeserializeObject<DataTable>(itemJson);
                 }
             }
         }
@@ -42,13 +41,6 @@ namespace InventoryManage {
             txtItemPrice.Text = string.Empty;
             txtItemProfit.Text = string.Empty;
             txtItemDescription.Text = string.Empty;
-        }
-
-        //Method to generate a unique ID for each record
-        public string generateID() {
-            Guid identification = Guid.NewGuid();
-
-            return identification.ToString();
         }
 
         //Method to calculate profit for a record
@@ -75,6 +67,7 @@ namespace InventoryManage {
 
         private void btnSave_Click(object sender, EventArgs e) {
             decimal itemPrice, itemCost;
+            Guid identification = Guid.NewGuid();
 
             //If price or cost aren't decimal values, show an error
             if (!decimal.TryParse(txtItemPrice.Text, out itemPrice)) MessageBox.Show("Error: Item Price value must be numeric");
@@ -83,7 +76,7 @@ namespace InventoryManage {
             //If price and cost are decimal values, generate new Item instance
             else {
                 Item newItem = new Item {
-                    Id = generateID(),
+                    Id = identification.ToString(),
                     Name = txtItemName.Text,
                     Quantity = (int)numItemQty.Value,
                     Category = txtItemCategory.Text,
@@ -110,6 +103,10 @@ namespace InventoryManage {
                 emptyForm();
                 refreshGrid();
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e) {
+
         }
 
         private void txtItemPrice_TextChanged(object sender, EventArgs e) {

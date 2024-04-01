@@ -1,42 +1,32 @@
 [
   {
-    "Id": "d351022d-f5db-4c3d-82ec-ad28a9e72ab2",
-    "Name": "awdtgfrawggraw",
-    "Quantity": 2,
-    "Category": "awd",
-    "Price": 1212.0,
-    "Cost": 12.0,
-    "Profit": 2400.0,
-    "Description": "awdawdawdawdsfzxcz"
+    "Id": "5419e2be-6d72-4716-9a61-93b658f2927c",
+    "Name": "Water Bottle 500ml",
+    "Quantity": 10,
+    "Category": "Drink",
+    "Price": 1.50,
+    "Cost": 1.25,
+    "Profit": 2.50,
+    "Description": "500ml bottle of drinking water"
   },
   {
-    "Id": "62a307a1-ed9d-473a-8303-d2b4998c5379",
-    "Name": "awdad",
-    "Quantity": 3,
-    "Category": "wer3ewrqqrwq",
-    "Price": 1212.0,
-    "Cost": 12.0,
-    "Profit": 3600.0,
-    "Description": "awdadsadbyjkhyuk"
+    "Id": "ccbd0161-8cb1-4bce-be42-5a5611bc040f",
+    "Name": "Beer 330ml",
+    "Quantity": 10,
+    "Category": "Drink",
+    "Price": 2.50,
+    "Cost": 1.0,
+    "Profit": 15.00,
+    "Description": "330ml bottle of beer. Customer must be 18 to purchase"
   },
   {
-    "Id": "87a01afd-55eb-4f6c-b809-9d111d00f0d5",
-    "Name": "awdadwasd",
-    "Quantity": 2,
-    "Category": "wadadswa",
-    "Price": 122.0,
-    "Cost": 21.0,
-    "Profit": 202.0,
-    "Description": "awdawdawdwd"
-  },
-  {
-    "Id": "3254716c-7e7f-4914-8ad0-a5276de7e0a6",
-    "Name": "awdawdawds",
-    "Quantity": 3,
-    "Category": "awdads",
-    "Price": 121.0,
-    "Cost": 21.0,
-    "Profit": 300.0,
-    "Description": "awdad"
+    "Id": "d5c618b1-9ac8-4be1-b970-e0c4d4775666",
+    "Name": "12in Cheese Pizza",
+    "Quantity": 20,
+    "Category": "Food",
+    "Price": 10.0,
+    "Cost": 7.50,
+    "Profit": 50.00,
+    "Description": "12 inch pizza with no toppings. Not suitable for vegans"
   }
 ]
