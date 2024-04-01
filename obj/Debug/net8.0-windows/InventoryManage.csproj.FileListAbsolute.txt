@@ -16,3 +16,6 @@ X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\InventoryManage.pdb
 X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\InventoryManage.genruntimeconfig.cache
 X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\ref\InventoryManage.dll
 X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\InventoryManage.sourcelink.json
+X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\InventoryManage.csproj.AssemblyReference.cache
+X:\Programming\C#\InventoryManage\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+X:\Programming\C#\InventoryManage\obj\Debug\net8.0-windows\Inventor.1908C520.Up2Date

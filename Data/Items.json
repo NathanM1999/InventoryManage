@@ -1,18 +1,42 @@
-{
-  "Id": "ddde4db2-3868-4824-8aa8-a45e8d32e254",
-  "Name": "Water Bottle 500ml",
-  "Quantity": 2,
-  "Category": "Drink",
-  "Price": 1.50,
-  "Cost": 1.25,
-  "Profit": 0.50,
-  "Description": "A 500ml bottle of drinking water"
-} {
-  "Id": "3d377a04-90da-4b37-b6f6-5558ab6899f6",
-  "Name": "Coca
-  Cola 1L","Quantity":5,"Category":"Drink","Price":3,"Cost":2.25,"Profit":3.75,"Description":"A
-  1 liter
-  bottle of
-  coca cola
-  soft drink"
-}
+[
+  {
+    "Id": "d351022d-f5db-4c3d-82ec-ad28a9e72ab2",
+    "Name": "awdtgfrawggraw",
+    "Quantity": 2,
+    "Category": "awd",
+    "Price": 1212.0,
+    "Cost": 12.0,
+    "Profit": 2400.0,
+    "Description": "awdawdawdawdsfzxcz"
+  },
+  {
+    "Id": "62a307a1-ed9d-473a-8303-d2b4998c5379",
+    "Name": "awdad",
+    "Quantity": 3,
+    "Category": "wer3ewrqqrwq",
+    "Price": 1212.0,
+    "Cost": 12.0,
+    "Profit": 3600.0,
+    "Description": "awdadsadbyjkhyuk"
+  },
+  {
+    "Id": "87a01afd-55eb-4f6c-b809-9d111d00f0d5",
+    "Name": "awdadwasd",
+    "Quantity": 2,
+    "Category": "wadadswa",
+    "Price": 122.0,
+    "Cost": 21.0,
+    "Profit": 202.0,
+    "Description": "awdawdawdwd"
+  },
+  {
+    "Id": "3254716c-7e7f-4914-8ad0-a5276de7e0a6",
+    "Name": "awdawdawds",
+    "Quantity": 3,
+    "Category": "awdads",
+    "Price": 121.0,
+    "Cost": 21.0,
+    "Profit": 300.0,
+    "Description": "awdad"
+  }
+]

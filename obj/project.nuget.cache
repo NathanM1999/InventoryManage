@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2qqTTub5i4sNG5OqdafV6gEFRHJN2mnf2GIPcx1YLPfx+rms/fDzeIiw9yAFfjDTF3ByvM7KtUEHXmKkILzM9w==",
+  "dgSpecHash": "oVtmOR6PtB/m/u/1EgH6l+XUp+qrlJBNPwAVjOL0sPXzfKsz+ljqTLOZMW7lomQdHzrF54Hp9+cKGQNCqChSLA==",
   "success": true,
   "projectFilePath": "X:\\Programming\\C#\\InventoryManage\\InventoryManage.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Nathan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

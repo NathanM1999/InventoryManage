@@ -1,16 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows;
 using System.IO;
+using System.Data;
 using static Item;
 using System.Text.Json;
-using System.Reflection;
+using Newtonsoft.Json;
+
 
 namespace InventoryManage {
 
     public partial class Form1 : Form {
 
+        //Absolute path to Items.JSON
+        //Change this to relative path
         string itemJsonPath = @"X:\Programming\C#\InventoryManage\Data\Items.json";
 
         public Form1() {
             InitializeComponent();
+        }
+
+        public void refreshGrid() {
+            if (File.Exists(itemJsonPath)) {
+                string itemJson = File.ReadAllText(itemJsonPath);
+
+                if (itemJson != null) {
+                    var items = itemJson;
+                    dgvItemList.DataSource = items;
+                }
+            }
         }
 
         //Method to empty all user input textboxes
@@ -44,6 +64,11 @@ namespace InventoryManage {
             return profit.ToString();
         }
 
+        //Upon the form loading, import data from JSON and display it
+        private void Form1_Load(object sender, EventArgs e) {
+            refreshGrid();
+        }
+
         private void btnNew_Click(object sender, EventArgs e) {
             emptyForm();
         }
@@ -69,13 +94,21 @@ namespace InventoryManage {
                 };
 
                 //Convert item instance to JSON
-                string ItemJSON = JsonSerializer.Serialize(newItem);
 
-                //Append new item JSON to Items.JSON. Will also create a file if none exists
-                File.AppendAllLines(itemJsonPath, ItemJSON.Split());
+                string itemsJSON = File.ReadAllText(itemJsonPath);
+                string json = JsonConvert.SerializeObject(newItem);
 
-                //Empty the form
+                if (itemsJSON.Length == 0) {
+                    itemsJSON = "[" + json + "]";
+                } else {
+                    itemsJSON.TrimEnd(']');
+                    itemsJSON = itemsJSON.Replace("]", ",") + json + "]";
+                }
+                //Write string to JSON file
+                File.WriteAllText(itemJsonPath, itemsJSON);
+
                 emptyForm();
+                refreshGrid();
             }
         }
 

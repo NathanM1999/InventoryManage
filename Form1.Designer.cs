@@ -260,6 +260,7 @@
             Controls.Add(txtItemName);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)numItemQty).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvItemList).EndInit();
             ResumeLayout(false);
