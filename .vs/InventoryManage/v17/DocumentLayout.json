@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\Programming\\C#\\InventoryManage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|x:\\programming\\c#\\inventorymanage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|x:\\programming\\c#\\inventorymanage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|X:\\Programming\\C#\\InventoryManage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "X:\\Programming\\C#\\InventoryManage\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "X:\\Programming\\C#\\InventoryManage\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T12:02:04.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "X:\\Programming\\C#\\InventoryManage\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "X:\\Programming\\C#\\InventoryManage\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAADMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T01:22:45.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "X:\\Programming\\C#\\InventoryManage\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "X:\\Programming\\C#\\InventoryManage\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T00:09:10.022Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
