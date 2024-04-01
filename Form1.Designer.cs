@@ -39,11 +39,11 @@
             btnDelete = new Button();
             txtItemPrice = new TextBox();
             lblItemPrice = new Label();
-            dataGridView1 = new DataGridView();
+            dgvItemList = new DataGridView();
             txtItemProfit = new TextBox();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)numItemQty).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvItemList).BeginInit();
             SuspendLayout();
             // 
             // txtItemName
@@ -207,13 +207,13 @@
             lblItemPrice.TabIndex = 15;
             lblItemPrice.Text = "Unit Price";
             // 
-            // dataGridView1
+            // dgvItemList
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(35, 399);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(873, 266);
-            dataGridView1.TabIndex = 17;
+            dgvItemList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvItemList.Location = new Point(35, 399);
+            dgvItemList.Name = "dgvItemList";
+            dgvItemList.Size = new Size(873, 266);
+            dgvItemList.TabIndex = 17;
             // 
             // txtItemProfit
             // 
@@ -241,7 +241,7 @@
             ClientSize = new Size(924, 720);
             Controls.Add(txtItemProfit);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvItemList);
             Controls.Add(txtItemPrice);
             Controls.Add(lblItemPrice);
             Controls.Add(btnDelete);
@@ -261,7 +261,7 @@
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)numItemQty).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvItemList).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -284,7 +284,7 @@
         private Button btnDelete;
         private TextBox txtItemPrice;
         private Label lblItemPrice;
-        private DataGridView dataGridView1;
+        private DataGridView dgvItemList;
         private TextBox txtItemProfit;
         private Label label1;
     }

@@ -13,6 +13,7 @@ namespace InventoryManage {
             InitializeComponent();
         }
 
+        //Method to empty all user input textboxes
         public void emptyForm() {
             txtItemName.Text = string.Empty;
             numItemQty.Value = 0;
@@ -23,12 +24,15 @@ namespace InventoryManage {
             txtItemDescription.Text = string.Empty;
         }
 
+        //Method to generate a unique ID for each record
         public string generateID() {
             Guid identification = Guid.NewGuid();
 
             return identification.ToString();
         }
 
+        //Method to calculate profit for a record
+        //profit = (price - cost) * quantity
         public string calculateProfit() {
             decimal profit = 0;
 
@@ -47,9 +51,11 @@ namespace InventoryManage {
         private void btnSave_Click(object sender, EventArgs e) {
             decimal itemPrice, itemCost;
 
+            //If price or cost aren't decimal values, show an error
             if (!decimal.TryParse(txtItemPrice.Text, out itemPrice)) MessageBox.Show("Error: Item Price value must be numeric");
             else if (!decimal.TryParse(txtItemCost.Text, out itemCost)) MessageBox.Show("Error: Item Cost value must be numeric");
 
+            //If price and cost are decimal values, generate new Item instance
             else {
                 Item newItem = new Item {
                     Id = generateID(),
@@ -62,14 +68,13 @@ namespace InventoryManage {
                     Description = txtItemDescription.Text,
                 };
 
+                //Convert item instance to JSON
                 string ItemJSON = JsonSerializer.Serialize(newItem);
 
-                if (!File.Exists(itemJsonPath)) {
-                    using (File.Create(itemJsonPath)) { }
-                }
+                //Append new item JSON to Items.JSON. Will also create a file if none exists
+                File.AppendAllLines(itemJsonPath, ItemJSON.Split());
 
-                File.WriteAllText(itemJsonPath, ItemJSON);
-
+                //Empty the form
                 emptyForm();
             }
         }

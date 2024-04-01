@@ -7,15 +7,11 @@
       "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|x:\\programming\\c#\\inventorymanage\\data\\items.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:data\\items.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|X:\\Programming\\C#\\InventoryManage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|x:\\programming\\c#\\inventorymanage\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|X:\\Programming\\C#\\InventoryManage\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Item.cs",
               "DocumentMoniker": "X:\\Programming\\C#\\InventoryManage\\Item.cs",
               "RelativeDocumentMoniker": "Item.cs",
@@ -44,25 +40,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Items.json",
-              "DocumentMoniker": "X:\\Programming\\C#\\InventoryManage\\Data\\Items.json",
-              "RelativeDocumentMoniker": "Data\\Items.json",
-              "ToolTip": "X:\\Programming\\C#\\InventoryManage\\Data\\Items.json",
-              "RelativeToolTip": "Data\\Items.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAACtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-01T12:38:11.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "X:\\Programming\\C#\\InventoryManage\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "X:\\Programming\\C#\\InventoryManage\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAADwv1UAAAAzAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAqwEoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T01:22:45.386Z",
               "EditorCaption": ""

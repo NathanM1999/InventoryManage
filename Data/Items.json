@@ -1,1 +1,18 @@
-{"Id":"e71394cd-e77e-48e9-92f6-b1648005f176","Name":"Water Bottle 500ml","Quantity":5,"Category":"Drink","Price":2,"Cost":1,"Description":"A 500ml bottle of drinking water"}
+{
+  "Id": "ddde4db2-3868-4824-8aa8-a45e8d32e254",
+  "Name": "Water Bottle 500ml",
+  "Quantity": 2,
+  "Category": "Drink",
+  "Price": 1.50,
+  "Cost": 1.25,
+  "Profit": 0.50,
+  "Description": "A 500ml bottle of drinking water"
+} {
+  "Id": "3d377a04-90da-4b37-b6f6-5558ab6899f6",
+  "Name": "Coca
+  Cola 1L","Quantity":5,"Category":"Drink","Price":3,"Cost":2.25,"Profit":3.75,"Description":"A
+  1 liter
+  bottle of
+  coca cola
+  soft drink"
+}
