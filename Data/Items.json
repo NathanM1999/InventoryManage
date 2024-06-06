@@ -8,5 +8,65 @@
     "Cost": 5.0,
     "Profit": 12.5,
     "Description": "In 1932 the newest resident on death row is John Coffey, a giant black man convicted of the brutal murder of two little girls. But nothing is as it seems with John Coffey, and around him unfolds a bizarre and horrifying story.\r\n\r\n1996, novel"
+  },
+  {
+    "Id": "ce57ad52-c62d-452f-b812-fd36ed6f3daf",
+    "Name": "The Shining",
+    "Quantity": 15,
+    "Category": "Book, Paperback",
+    "Price": 10.0,
+    "Cost": 7.5,
+    "Profit": 37.5,
+    "Description": "Danny is only five years old, but in the words of old Mr Hallorann he is a 'shiner', aglow with psychic voltage. When his father becomes caretaker of the Overlook Hotel, Danny's visions grow out of control. As winter closes in and blizzards cut them off, the hotel seems to develop a life of its own."
+  },
+  {
+    "Id": "0a9d9ff0-79de-4e77-8e6d-bea08b896ef7",
+    "Name": "Carrie",
+    "Quantity": 10,
+    "Category": "Book, Paperback",
+    "Price": 5.0,
+    "Cost": 1.25,
+    "Profit": 37.5,
+    "Description": "Unpopular at school and subjected to her mother's religious fanaticism at home, Carrie White does not have it easy. But while she may be picked on by her classmates, she has a gift she's kept secret since she was a little girl: she can move things with her mind. Doors lock. Candles fall."
+  },
+  {
+    "Id": "84b49e3e-5f22-49e8-914b-9ce34d88edf3",
+    "Name": "Salem's Lot",
+    "Quantity": 4,
+    "Category": "Book",
+    "Price": 7.5,
+    "Cost": 3.0,
+    "Profit": 18.0,
+    "Description": "Author Ben Mears returns to 'Salem's Lot to write a book about a house that has haunted him since childhood only to find his isolated hometown infested with vampires. While the vampires claim more victims, Mears convinces a small group of believers to combat the undead."
+  },
+  {
+    "Id": "47adacb5-1301-44ac-9fe6-8adedfd0c982",
+    "Name": "Pet Semetary",
+    "Quantity": 3,
+    "Category": "Book",
+    "Price": 5.0,
+    "Cost": 3.0,
+    "Profit": 6.0,
+    "Description": "Louis Creed's rural Maine home frequently claims the lives of neighborhood pets. Louis has recently moved from Chicago to Ludlow with his wife Rachel, their children and pet cat. Near their house, local children have created a cemetery for the dogs and cats killed by the steady stream of transports on the busy highway."
+  },
+  {
+    "Id": "acb160e9-d7e1-46af-8dbf-73bd997bd18b",
+    "Name": "Test",
+    "Quantity": 4,
+    "Category": "asdasdaw",
+    "Price": 121.0,
+    "Cost": 1.0,
+    "Profit": 480.0,
+    "Description": "aadwawdsadasdawdawdawds"
+  },
+  {
+    "Id": "34a8a6ed-5693-448d-8c28-ac5c5ad4ab10",
+    "Name": "TestTwo",
+    "Quantity": 8,
+    "Category": "adsadad",
+    "Price": 1221.0,
+    "Cost": 211.0,
+    "Profit": 8080.0,
+    "Description": "sdasdsadadasdasdfgdrfhfgthyjtyhserthftyuisdrethgrt"
   }
-]
+,{"Id":"28d9d852-721d-4f04-abe2-1bad7cff3a68","Name":"awdawdsadawd","Quantity":4,"Category":"dwad","Price":21.0,"Cost":12.0,"Profit":36.0,"Description":"adsadsadsadasdawdafdgfr"}]
