@@ -1,32 +1,12 @@
 [
   {
-    "Id": "5419e2be-6d72-4716-9a61-93b658f2927c",
-    "Name": "Water Bottle 500ml",
-    "Quantity": 10,
-    "Category": "Drink",
-    "Price": 1.50,
-    "Cost": 1.25,
-    "Profit": 2.50,
-    "Description": "500ml bottle of drinking water"
-  },
-  {
-    "Id": "ccbd0161-8cb1-4bce-be42-5a5611bc040f",
-    "Name": "Beer 330ml",
-    "Quantity": 10,
-    "Category": "Drink",
-    "Price": 2.50,
-    "Cost": 1.0,
-    "Profit": 15.00,
-    "Description": "330ml bottle of beer. Customer must be 18 to purchase"
-  },
-  {
-    "Id": "d5c618b1-9ac8-4be1-b970-e0c4d4775666",
-    "Name": "12in Cheese Pizza",
-    "Quantity": 20,
-    "Category": "Food",
-    "Price": 10.0,
-    "Cost": 7.50,
-    "Profit": 50.00,
-    "Description": "12 inch pizza with no toppings. Not suitable for vegans"
+    "Id": "7745af10-2d60-437b-b1d0-a0c1346dc684",
+    "Name": "The Green Mile by Steven King",
+    "Quantity": 5,
+    "Category": "Book, Paperback",
+    "Price": 7.5,
+    "Cost": 5.0,
+    "Profit": 12.5,
+    "Description": "In 1932 the newest resident on death row is John Coffey, a giant black man convicted of the brutal murder of two little girls. But nothing is as it seems with John Coffey, and around him unfolds a bizarre and horrifying story.\r\n\r\n1996, novel"
   }
 ]

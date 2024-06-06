@@ -42,6 +42,7 @@
             dgvItemList = new DataGridView();
             txtItemProfit = new TextBox();
             label1 = new Label();
+            btnTest = new Button();
             ((System.ComponentModel.ISupportInitialize)numItemQty).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvItemList).BeginInit();
             SuspendLayout();
@@ -234,12 +235,26 @@
             label1.TabIndex = 18;
             label1.Text = "Total Profit";
             // 
+            // btnTest
+            // 
+            btnTest.BackColor = Color.LightGray;
+            btnTest.FlatStyle = FlatStyle.Flat;
+            btnTest.ForeColor = SystemColors.ActiveCaptionText;
+            btnTest.Location = new Point(104, 287);
+            btnTest.Name = "btnTest";
+            btnTest.Size = new Size(90, 39);
+            btnTest.TabIndex = 20;
+            btnTest.Text = "Test";
+            btnTest.UseVisualStyleBackColor = false;
+            btnTest.Click += btnTest_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
             ClientSize = new Size(924, 720);
+            Controls.Add(btnTest);
             Controls.Add(txtItemProfit);
             Controls.Add(label1);
             Controls.Add(dgvItemList);
@@ -289,5 +304,6 @@
         private DataGridView dgvItemList;
         private TextBox txtItemProfit;
         private Label label1;
+        private Button btnTest;
     }
 }

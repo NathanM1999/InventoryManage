@@ -8,6 +8,8 @@ using System.Data;
 using static Item;
 using System.Text.Json;
 using Newtonsoft.Json;
+using System.Windows.Forms;
+using Newtonsoft.Json.Linq;
 
 
 namespace InventoryManage {
@@ -73,7 +75,6 @@ namespace InventoryManage {
             if (!decimal.TryParse(txtItemPrice.Text, out itemPrice)) MessageBox.Show("Error: Item Price value must be numeric");
             else if (!decimal.TryParse(txtItemCost.Text, out itemCost)) MessageBox.Show("Error: Item Cost value must be numeric");
 
-            //If price and cost are decimal values, generate new Item instance
             else {
                 Item newItem = new Item {
                     Id = identification.ToString(),
@@ -86,8 +87,6 @@ namespace InventoryManage {
                     Description = txtItemDescription.Text,
                 };
 
-                //Convert item instance to JSON
-
                 string itemsJSON = File.ReadAllText(itemJsonPath);
                 string json = JsonConvert.SerializeObject(newItem);
 
@@ -97,7 +96,7 @@ namespace InventoryManage {
                     itemsJSON.TrimEnd(']');
                     itemsJSON = itemsJSON.Replace("]", ",") + json + "]";
                 }
-                //Write string to JSON file
+
                 File.WriteAllText(itemJsonPath, itemsJSON);
 
                 emptyForm();
@@ -106,8 +105,51 @@ namespace InventoryManage {
         }
 
         private void btnDelete_Click(object sender, EventArgs e) {
+            string json = File.ReadAllText(itemJsonPath);
+            JArray jsonArray = JArray.Parse(json);
 
+            if (dgvItemList.SelectedCells.Count == 0) {
+                MessageBox.Show("Error: Nothing Selected");
+                return;
+            }
+
+            string dltItem = dgvItemList.SelectedCells[0].Value.ToString();
+            bool itemFound = false;
+
+            for (int i = 0; i < jsonArray.Count; i++) {
+                JObject currentItem = (JObject)jsonArray[i];
+
+                
+                if (currentItem["Id"] != null) {
+                    
+                    string currentItemId = currentItem["Id"].ToString();
+
+                    if (currentItemId == dltItem) {
+                        jsonArray.RemoveAt(i);
+                        json = jsonArray.ToString();
+                    
+                        File.WriteAllText(itemJsonPath, json); 
+                        
+                        if (Int32.Parse(currentItem["Quantity"].ToString()) > 1) MessageBox.Show(currentItem["Name"] + "(s) deleted successfully.");
+                        else MessageBox.Show(currentItem["Name"] + " deleted successfully.");
+                        
+                        itemFound = true;
+                        refreshGrid();
+                        
+                        break;
+                    }
+                } else {
+                    MessageBox.Show("Error: Item not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            if (!itemFound) {
+                MessageBox.Show("Error: Item not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
+
 
         private void txtItemPrice_TextChanged(object sender, EventArgs e) {
             txtItemProfit.Text = calculateProfit();
@@ -119,6 +161,10 @@ namespace InventoryManage {
 
         private void numItemQty_ValueChanged(object sender, EventArgs e) {
             txtItemProfit.Text = calculateProfit();
+        }
+          
+        private void btnTest_Click(object sender, EventArgs e) {
+
         }
     }
 }
