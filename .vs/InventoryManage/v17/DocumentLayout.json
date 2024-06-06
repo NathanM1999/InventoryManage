@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "X:\\Programming\\C#\\InventoryManage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|X:\\Programming\\C#\\InventoryManage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|x:\\programming\\c#\\inventorymanage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|x:\\programming\\c#\\inventorymanage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|X:\\Programming\\C#\\InventoryManage\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7952ACC6-DF4D-483A-ACBA-392B95BEB815}|InventoryManage.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "Data\\Items.json",
               "ToolTip": "X:\\Programming\\C#\\InventoryManage\\Data\\Items.json",
               "RelativeToolTip": "Data\\Items.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAACzAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAEUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-04T00:30:48.618Z",
               "EditorCaption": ""
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "X:\\Programming\\C#\\InventoryManage\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAMwJAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-01T01:22:45.386Z",
               "EditorCaption": ""

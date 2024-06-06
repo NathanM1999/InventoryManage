@@ -156,7 +156,7 @@
             btnSave.BackColor = Color.LightGray;
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.ForeColor = SystemColors.ActiveCaptionText;
-            btnSave.Location = new Point(312, 305);
+            btnSave.Location = new Point(311, 305);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(90, 39);
             btnSave.TabIndex = 12;
@@ -182,7 +182,7 @@
             btnDelete.BackColor = Color.LightGray;
             btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.ForeColor = SystemColors.ActiveCaptionText;
-            btnDelete.Location = new Point(706, 305);
+            btnDelete.Location = new Point(703, 305);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(90, 39);
             btnDelete.TabIndex = 14;
@@ -240,7 +240,7 @@
             btnEdit.BackColor = Color.LightGray;
             btnEdit.FlatStyle = FlatStyle.Flat;
             btnEdit.ForeColor = SystemColors.ActiveCaptionText;
-            btnEdit.Location = new Point(509, 305);
+            btnEdit.Location = new Point(507, 305);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(90, 39);
             btnEdit.TabIndex = 20;

@@ -139,8 +139,19 @@ namespace InventoryManage {
             }
         }
 
+        private void btnEdit_Click(object sender, EventArgs e) {
 
+            //Select item from DVG
 
+            //Populate fields with the data
+
+            //Change data in fields (Within the normal rules)
+
+            //Alter the JSON of that item to match the edited version
+
+            //Refresh Grid
+            refreshGrid();
+        }
 
         private void txtItemPrice_TextChanged(object sender, EventArgs e) {
             txtItemProfit.Text = calculateProfit();
@@ -152,10 +163,6 @@ namespace InventoryManage {
 
         private void numItemQty_ValueChanged(object sender, EventArgs e) {
             txtItemProfit.Text = calculateProfit();
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e) {
-
         }
     }
 }
