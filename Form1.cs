@@ -119,23 +119,23 @@ namespace InventoryManage {
             for (int i = 0; i < jsonArray.Count; i++) {
                 JObject currentItem = (JObject)jsonArray[i];
 
-                
+
                 if (currentItem["Id"] != null) {
-                    
+
                     string currentItemId = currentItem["Id"].ToString();
 
                     if (currentItemId == dltItem) {
                         jsonArray.RemoveAt(i);
                         json = jsonArray.ToString();
-                    
-                        File.WriteAllText(itemJsonPath, json); 
-                        
-                        if (Int32.Parse(currentItem["Quantity"].ToString()) > 1) MessageBox.Show(currentItem["Name"] + "(s) deleted successfully.");
+
+                        File.WriteAllText(itemJsonPath, json);
+
+                        if (int.Parse(currentItem["Quantity"].ToString()) > 1) MessageBox.Show(currentItem["Name"] + "(s) deleted successfully.");
                         else MessageBox.Show(currentItem["Name"] + " deleted successfully.");
-                        
+
                         itemFound = true;
                         refreshGrid();
-                        
+
                         break;
                     }
                 } else {
@@ -162,8 +162,8 @@ namespace InventoryManage {
         private void numItemQty_ValueChanged(object sender, EventArgs e) {
             txtItemProfit.Text = calculateProfit();
         }
-          
-        private void btnTest_Click(object sender, EventArgs e) {
+
+        private void btnEdit_Click(object sender, EventArgs e) {
 
         }
     }

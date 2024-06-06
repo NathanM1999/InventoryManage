@@ -42,7 +42,7 @@
             dgvItemList = new DataGridView();
             txtItemProfit = new TextBox();
             label1 = new Label();
-            btnTest = new Button();
+            btnEdit = new Button();
             ((System.ComponentModel.ISupportInitialize)numItemQty).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvItemList).BeginInit();
             SuspendLayout();
@@ -156,7 +156,7 @@
             btnSave.BackColor = Color.LightGray;
             btnSave.FlatStyle = FlatStyle.Flat;
             btnSave.ForeColor = SystemColors.ActiveCaptionText;
-            btnSave.Location = new Point(425, 287);
+            btnSave.Location = new Point(312, 305);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(90, 39);
             btnSave.TabIndex = 12;
@@ -169,7 +169,7 @@
             btnNew.BackColor = Color.LightGray;
             btnNew.FlatStyle = FlatStyle.Flat;
             btnNew.ForeColor = SystemColors.ActiveCaptionText;
-            btnNew.Location = new Point(250, 287);
+            btnNew.Location = new Point(115, 305);
             btnNew.Name = "btnNew";
             btnNew.Size = new Size(90, 39);
             btnNew.TabIndex = 13;
@@ -182,7 +182,7 @@
             btnDelete.BackColor = Color.LightGray;
             btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.ForeColor = SystemColors.ActiveCaptionText;
-            btnDelete.Location = new Point(600, 287);
+            btnDelete.Location = new Point(706, 305);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(90, 39);
             btnDelete.TabIndex = 14;
@@ -235,18 +235,18 @@
             label1.TabIndex = 18;
             label1.Text = "Total Profit";
             // 
-            // btnTest
+            // btnEdit
             // 
-            btnTest.BackColor = Color.LightGray;
-            btnTest.FlatStyle = FlatStyle.Flat;
-            btnTest.ForeColor = SystemColors.ActiveCaptionText;
-            btnTest.Location = new Point(104, 287);
-            btnTest.Name = "btnTest";
-            btnTest.Size = new Size(90, 39);
-            btnTest.TabIndex = 20;
-            btnTest.Text = "Test";
-            btnTest.UseVisualStyleBackColor = false;
-            btnTest.Click += btnTest_Click;
+            btnEdit.BackColor = Color.LightGray;
+            btnEdit.FlatStyle = FlatStyle.Flat;
+            btnEdit.ForeColor = SystemColors.ActiveCaptionText;
+            btnEdit.Location = new Point(509, 305);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(90, 39);
+            btnEdit.TabIndex = 20;
+            btnEdit.Text = "Edit";
+            btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.Click += btnEdit_Click;
             // 
             // Form1
             // 
@@ -254,7 +254,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
             ClientSize = new Size(924, 720);
-            Controls.Add(btnTest);
+            Controls.Add(btnEdit);
             Controls.Add(txtItemProfit);
             Controls.Add(label1);
             Controls.Add(dgvItemList);
@@ -304,6 +304,6 @@
         private DataGridView dgvItemList;
         private TextBox txtItemProfit;
         private Label label1;
-        private Button btnTest;
+        private Button btnEdit;
     }
 }
