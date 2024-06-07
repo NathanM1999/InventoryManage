@@ -1,4 +1,6 @@
 using System.Data;
+using System.Text.Json.Nodes;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -49,6 +51,49 @@ namespace InventoryManage {
             return profit.ToString();
         }
 
+        private void overrideEntry() {
+            string json = File.ReadAllText(itemJsonPath);
+            JArray jsonArray = JArray.Parse(json);
+
+            if (dgvItemList.SelectedCells.Count == 0) {
+                MessageBox.Show("Error: Nothing Selected");
+                return;
+            }
+
+            string edtItem = dgvItemList.SelectedRows[0].Cells[0].Value.ToString();
+
+
+            for (int i = 0; i < jsonArray.Count; i++) {
+                JObject currentItem = (JObject)jsonArray[i];
+
+                if (currentItem["Id"] != null) {
+                    string currentItemId = currentItem["Id"].ToString();
+
+
+                    if (currentItemId == edtItem) {
+
+                        if (currentItem["Name"] != null) currentItem["Name"] = txtItemName.Text;
+                        if (currentItem["Quantity"] != null) currentItem["Quantity"] = int.Parse(numItemQty.Value.ToString());
+                        if (currentItem["Category"] != null) currentItem["Category"] = txtItemCategory.Text;
+                        if (currentItem["Price"] != null) currentItem["Price"] = decimal.Parse(txtItemPrice.Text);
+                        if (currentItem["Cost"] != null) currentItem["Cost"] = decimal.Parse(txtItemCost.Text);
+                        if (currentItem["Profit"] != null) currentItem["Profit"] = decimal.Parse(txtItemProfit.Text);
+                        if (currentItem["Description"] != null) currentItem["Description"] = txtItemDescription.Text;
+
+
+
+                        File.WriteAllText(itemJsonPath, jsonArray.ToString());
+                        MessageBox.Show("Item updated successfully.");
+                        emptyForm();
+
+                        break;
+
+                    }
+                }
+            }
+        }
+
+
         //Upon the form loading, import data from JSON and display it
         private void Form1_Load(object sender, EventArgs e) {
             refreshGrid();
@@ -90,8 +135,8 @@ namespace InventoryManage {
 
                 File.WriteAllText(itemJsonPath, itemsJSON);
 
-                emptyForm();
                 refreshGrid();
+                emptyForm();
             }
         }
 
@@ -104,7 +149,7 @@ namespace InventoryManage {
                 return;
             }
 
-            string dltItem = dgvItemList.SelectedCells[0].Value.ToString();
+            string dltItem = dgvItemList.SelectedRows[0].Cells[0].Value.ToString();
             bool itemFound = false;
 
             for (int i = 0; i < jsonArray.Count; i++) {
@@ -129,28 +174,29 @@ namespace InventoryManage {
 
                         break;
                     }
-                } else {
-                    MessageBox.Show("Error: Item not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-
-            if (!itemFound) {
-                MessageBox.Show("Error: Item not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void btnEdit_Click(object sender, EventArgs e) {
 
             //Select item from DVG
+            string itemName = dgvItemList.CurrentRow.Cells[1].Value.ToString();
+            int itemQuantity = int.Parse(dgvItemList.CurrentRow.Cells[2].Value.ToString());
+            string itemCategory = dgvItemList.CurrentRow.Cells[3].Value.ToString();
+            decimal itemPrice = decimal.Parse(dgvItemList.CurrentRow.Cells[4].Value.ToString());
+            decimal itemCost = decimal.Parse(dgvItemList.CurrentRow.Cells[5].Value.ToString());
+            decimal itemProfit = decimal.Parse(dgvItemList.CurrentRow.Cells[6].Value.ToString());
+            string itemDescription = dgvItemList.CurrentRow.Cells[7].Value.ToString();
 
             //Populate fields with the data
-
-            //Change data in fields (Within the normal rules)
-
-            //Alter the JSON of that item to match the edited version
-
-            //Refresh Grid
-            refreshGrid();
+            txtItemName.Text = itemName;
+            numItemQty.Value = itemQuantity;
+            txtItemCategory.Text = itemCategory;
+            txtItemPrice.Text = itemPrice.ToString();
+            txtItemCost.Text = itemCost.ToString();
+            txtItemProfit.Text = itemProfit.ToString();
+            txtItemDescription.Text = itemDescription;
         }
 
         private void txtItemPrice_TextChanged(object sender, EventArgs e) {
@@ -163,6 +209,17 @@ namespace InventoryManage {
 
         private void numItemQty_ValueChanged(object sender, EventArgs e) {
             txtItemProfit.Text = calculateProfit();
+        }
+
+        private void btnSaveEdit_Click(object sender, EventArgs e) {
+
+            //Override the previous entry with the new entry
+            DialogResult userChoice = MessageBox.Show("Are you sure you want to override this entry?", "Override", MessageBoxButtons.YesNo);
+
+            if (userChoice == DialogResult.Yes) overrideEntry();
+
+            //Refresh Grid
+            refreshGrid();
         }
     }
 }

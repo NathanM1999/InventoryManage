@@ -43,6 +43,7 @@
             txtItemProfit = new TextBox();
             label1 = new Label();
             btnEdit = new Button();
+            btnSaveEdit = new Button();
             ((System.ComponentModel.ISupportInitialize)numItemQty).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvItemList).BeginInit();
             SuspendLayout();
@@ -214,6 +215,7 @@
             dgvItemList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvItemList.Location = new Point(35, 399);
             dgvItemList.Name = "dgvItemList";
+            dgvItemList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvItemList.Size = new Size(854, 266);
             dgvItemList.TabIndex = 17;
             // 
@@ -248,12 +250,23 @@
             btnEdit.UseVisualStyleBackColor = false;
             btnEdit.Click += btnEdit_Click;
             // 
+            // btnSaveEdit
+            // 
+            btnSaveEdit.Location = new Point(507, 350);
+            btnSaveEdit.Name = "btnSaveEdit";
+            btnSaveEdit.Size = new Size(90, 39);
+            btnSaveEdit.TabIndex = 21;
+            btnSaveEdit.Text = "Save Edit";
+            btnSaveEdit.UseVisualStyleBackColor = true;
+            btnSaveEdit.Click += btnSaveEdit_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(18, 18, 18);
             ClientSize = new Size(924, 720);
+            Controls.Add(btnSaveEdit);
             Controls.Add(btnEdit);
             Controls.Add(txtItemProfit);
             Controls.Add(label1);
@@ -305,5 +318,6 @@
         private TextBox txtItemProfit;
         private Label label1;
         private Button btnEdit;
+        private Button btnSaveEdit;
     }
 }
