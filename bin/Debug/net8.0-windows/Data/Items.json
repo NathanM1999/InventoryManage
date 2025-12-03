@@ -1,0 +1,62 @@
+[
+  {
+    "Id": "7745af10-2d60-437b-b1d0-a0c1346dc684",
+    "Name": "The Green Mile by Steven King",
+    "Quantity": 5,
+    "Category": "Book, Paperback",
+    "Price": 7.5,
+    "Cost": 5.0,
+    "Profit": 12.5,
+    "Description": "In 1932 the newest resident on death row is John Coffey, a giant black man convicted of the brutal murder of two little girls. But nothing is as it seems with John Coffey, and around him unfolds a bizarre and horrifying story.\r\n\r\n1996, novel"
+  },
+  {
+    "Id": "ce57ad52-c62d-452f-b812-fd36ed6f3daf",
+    "Name": "The Shining",
+    "Quantity": 15,
+    "Category": "Book, Paperback",
+    "Price": 10.0,
+    "Cost": 7.5,
+    "Profit": 37.5,
+    "Description": "Danny is only five years old, but in the words of old Mr Hallorann he is a 'shiner', aglow with psychic voltage. When his father becomes caretaker of the Overlook Hotel, Danny's visions grow out of control. As winter closes in and blizzards cut them off, the hotel seems to develop a life of its own."
+  },
+  {
+    "Id": "0a9d9ff0-79de-4e77-8e6d-bea08b896ef7",
+    "Name": "Carrie",
+    "Quantity": 10,
+    "Category": "Book, Paperback",
+    "Price": 5.0,
+    "Cost": 1.25,
+    "Profit": 37.5,
+    "Description": "Unpopular at school and subjected to her mother's religious fanaticism at home, Carrie White does not have it easy. But while she may be picked on by her classmates, she has a gift she's kept secret since she was a little girl: she can move things with her mind. Doors lock. Candles fall."
+  },
+  {
+    "Id": "84b49e3e-5f22-49e8-914b-9ce34d88edf3",
+    "Name": "Salem's Lot",
+    "Quantity": 4,
+    "Category": "Book",
+    "Price": 7.5,
+    "Cost": 3.0,
+    "Profit": 18.0,
+    "Description": "Author Ben Mears returns to 'Salem's Lot to write a book about a house that has haunted him since childhood only to find his isolated hometown infested with vampires. While the vampires claim more victims, Mears convinces a small group of believers to combat the undead."
+  },
+  {
+    "Id": "47adacb5-1301-44ac-9fe6-8adedfd0c982",
+    "Name": "Pet Semetary",
+    "Quantity": 3,
+    "Category": "Book",
+    "Price": 5.0,
+    "Cost": 3.0,
+    "Profit": 6.0,
+    "Description": "Louis Creed's rural Maine home frequently claims the lives of neighborhood pets. Louis has recently moved from Chicago to Ludlow with his wife Rachel, their children and pet cat. Near their house, local children have created a cemetery for the dogs and cats killed by the steady stream of transports on the busy highway."
+  },
+  {
+    "Id": "acb160e9-d7e1-46af-8dbf-73bd997bd18b",
+    "Name": "The Institute",
+    "Quantity": 9,
+    "Category": "Book, Hardcover",
+    "Price": 15.0,
+    "Cost": 10.0,
+    "Profit": 45.0,
+    "Description": "In the middle of the night, in a house on a quiet street in suburban Minneapolis, intruders silently murder Luke Ellis’s parents and load him into a black SUV. The operation takes less than two minutes. Luke will wake up at The Institute, in a room that looks just like his own, except there’s no window. And outside his door are other doors, behind which are other kids with special talents—telekinesis and telepathy—who got to this place the same way Luke did: Kalisha, Nick, George, Iris, and ten-year-old Avery Dixon. They are all in Front Half. Others, Luke learns, graduated to Back Half, “like the roach motel,” Kalisha says. “You check in, but you don’t check out.”\r\n\r\nIn this most sinister of institutions, the director, Mrs. Sigsby, and her staff are ruthlessly dedicated to extracting from these children the force of their extranormal gifts. There are no scruples here. If you go along, you get tokens for the vending machines. If you don’t, punishment is brutal. As each new victim disappears to Back Half, Luke becomes more and more desperate to get out and get help. But no one has ever escaped from the Institute.\r\n\r\nAs psychically terrifying as Firestarter, and with the spectacular kid power of It, The Institute is Stephen King's gut-wrenchingly dramatic story of good versus evil in a world where the good guys don't always win."
+  }
+]

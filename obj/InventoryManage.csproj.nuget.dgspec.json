@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "X:\\Programming\\C#\\InventoryManage\\InventoryManage.csproj": {}
+    "C:\\Users\\natha\\Documents\\Projects\\InventoryManage\\InventoryManage.csproj": {}
   },
   "projects": {
-    "X:\\Programming\\C#\\InventoryManage\\InventoryManage.csproj": {
+    "C:\\Users\\natha\\Documents\\Projects\\InventoryManage\\InventoryManage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Programming\\C#\\InventoryManage\\InventoryManage.csproj",
+        "projectUniqueName": "C:\\Users\\natha\\Documents\\Projects\\InventoryManage\\InventoryManage.csproj",
         "projectName": "InventoryManage",
-        "projectPath": "X:\\Programming\\C#\\InventoryManage\\InventoryManage.csproj",
-        "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
-        "outputPath": "X:\\Programming\\C#\\InventoryManage\\obj\\",
+        "projectPath": "C:\\Users\\natha\\Documents\\Projects\\InventoryManage\\InventoryManage.csproj",
+        "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\natha\\Documents\\Projects\\InventoryManage\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,6 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,7 +45,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -72,7 +76,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

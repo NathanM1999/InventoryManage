@@ -9,9 +9,7 @@ namespace InventoryManage {
 
     public partial class Form1 : Form {
 
-        //Absolute path to Items.JSON
-        //Change this to relative path
-        string itemJsonPath = @"X:\Programming\C#\InventoryManage\Data\Items.json";
+        string itemJsonPath = @"Data\Items.json";
 
         public Form1() {
             InitializeComponent();
