@@ -24,8 +24,6 @@ namespace InventoryManage {
                 }
             }
         }
-
-        //Method to empty all user input textboxes
         public void emptyForm() {
             txtItemName.Text = string.Empty;
             numItemQty.Value = 0;
@@ -36,8 +34,6 @@ namespace InventoryManage {
             txtItemDescription.Text = string.Empty;
         }
 
-        //Method to calculate profit for a record
-        //profit = (price - cost) * quantity
         public string calculateProfit() {
             decimal profit = 0;
 
@@ -90,9 +86,6 @@ namespace InventoryManage {
                 }
             }
         }
-
-
-        //Upon the form loading, import data from JSON and display it
         private void Form1_Load(object sender, EventArgs e) {
             refreshGrid();
         }
@@ -105,7 +98,6 @@ namespace InventoryManage {
             decimal itemPrice, itemCost;
             Guid identification = Guid.NewGuid();
 
-            //If price or cost aren't decimal values, show an error
             if (!decimal.TryParse(txtItemPrice.Text, out itemPrice)) MessageBox.Show("Error: Item Price value must be numeric");
             else if (!decimal.TryParse(txtItemCost.Text, out itemCost)) MessageBox.Show("Error: Item Cost value must be numeric");
 
@@ -178,7 +170,6 @@ namespace InventoryManage {
 
         private void btnEdit_Click(object sender, EventArgs e) {
 
-            //Select item from DVG
             string itemName = dgvItemList.CurrentRow.Cells[1].Value.ToString();
             int itemQuantity = int.Parse(dgvItemList.CurrentRow.Cells[2].Value.ToString());
             string itemCategory = dgvItemList.CurrentRow.Cells[3].Value.ToString();
@@ -187,7 +178,6 @@ namespace InventoryManage {
             decimal itemProfit = decimal.Parse(dgvItemList.CurrentRow.Cells[6].Value.ToString());
             string itemDescription = dgvItemList.CurrentRow.Cells[7].Value.ToString();
 
-            //Populate fields with the data
             txtItemName.Text = itemName;
             numItemQty.Value = itemQuantity;
             txtItemCategory.Text = itemCategory;
@@ -211,12 +201,10 @@ namespace InventoryManage {
 
         private void btnSaveEdit_Click(object sender, EventArgs e) {
 
-            //Override the previous entry with the new entry
             DialogResult userChoice = MessageBox.Show("Are you sure you want to override this entry?", "Override", MessageBoxButtons.YesNo);
 
             if (userChoice == DialogResult.Yes) overrideEntry();
 
-            //Refresh Grid
             refreshGrid();
         }
     }

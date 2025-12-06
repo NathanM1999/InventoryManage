@@ -1,0 +1,7 @@
+C:\Users\natha\Documents\Projects\InventoryManage\bin\Release\net8.0-windows\publish\Data\Items.json
+C:\Users\natha\Documents\Projects\InventoryManage\bin\Release\net8.0-windows\publish\InventoryManage.exe
+C:\Users\natha\Documents\Projects\InventoryManage\bin\Release\net8.0-windows\publish\InventoryManage.dll
+C:\Users\natha\Documents\Projects\InventoryManage\bin\Release\net8.0-windows\publish\InventoryManage.deps.json
+C:\Users\natha\Documents\Projects\InventoryManage\bin\Release\net8.0-windows\publish\InventoryManage.runtimeconfig.json
+C:\Users\natha\Documents\Projects\InventoryManage\bin\Release\net8.0-windows\publish\InventoryManage.pdb
+C:\Users\natha\Documents\Projects\InventoryManage\bin\Release\net8.0-windows\publish\Newtonsoft.Json.dll
